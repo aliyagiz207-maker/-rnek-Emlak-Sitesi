@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Premium Emlak - Türkiye'nin Emlak Vitrini</title>
+    <style>@view-transition { navigation: auto; }</style>
+    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+    <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo"> <span id="site-title"><a href="" style="color:inherit;text-decoration:none;">Premium Emlak</a></span></div>
+            <nav>
+                <hr><ul class="nav-menu">
+                    <li><a href="premiumemlak.html"><b>Ana Sayfa</b></a></li>
+                    <li><a href="#ilanlar"><b>İlanlar</b></a></li>
+                    <li><a href="#hakkimizda"><b>Hakkımızda</b></a></li>
+                    <li><a href="#iletisim"><b>İletişim</b></a></li>
+                </ul><hr>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="anasayfa">
+        <div class="container">
+            <h1 class="hero-title" id="hero-title">HAYALİNİZDEKİ EVİ BULUN<hr></h1>
+            <p class="hero-subtitle" id="hero-subtitle"><b>Türkiye'nin dört bir yanından binlerce emlak ilanı</b></p>
+            <button class="cta-button" id="cta-button"><a href="#ilanlar"><b><i>İlanları İncele</i></b></a></button>
+        </div>
+    </section>
+
+    <div class="container" id="ilanlar">
+        <h2 class="section-title">İlanları Keşfedin</h2>
+        
+        <div class="main-content-wrapper">
+            
+            <aside class="sidebar">
+                <h3>
+                    <b>Filtrele</b> 
+                    <button id="clearFilters" class="clear-btn"><b>Temizle</b></button>
+                </h3>
+                
+                <div class="filter-group">
+                    <h4><b>Durum</b><hr></h4>
+                    <label class="checkbox-item"><input type="checkbox" name="durum" value="satilik"><i>Satılık</i></label>
+                    <label class="checkbox-item"><input type="checkbox" name="durum" value="kiralik"><i>Kiralık</i></label>
+                    <label class="checkbox-item"><input type="checkbox" name="durum" value="gunluk"><i>Günlük Kiralık</i></label>
+                </div>
+
+                <div class="filter-group">
+                    <h4><b>Şehir</b><hr></h4>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="istanbul"> İstanbul</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="ankara"> Ankara</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="izmir"> İzmir</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="mugla"> Muğla</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="antalya"> Antalya</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="bursa"> Bursa</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="trabzon"> Trabzon</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="sakarya"> Sakarya</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="bolu"> Bolu</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="eskisehir"> Eskişehir</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="mersin"> Mersin</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="sinop"> Sinop</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="kars"> Kars</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="nevsehir"> Nevşehir</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="aydin"> Aydın</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="canakkale"> Çanakkale</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="gaziantep"> Gaziantep</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="rize"> Rize</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="adana"> Adana</label>
+                    <label class="checkbox-item"><input type="checkbox" name="sehir" value="konya"> Konya</label>
+                </div>
+            </aside>
+
+            <div class="properties-grid" id="ilanListesi">
+                
+                <div class="property-card" data-kategori="satilik" data-sehir="sinop">
+                    <div class="property-image"><span class="badge">Fırsat</span><a href="sinop.html"><img src="sinop\sinop1.png" alt="Sinop Deniz"></a></div>
+                    <div class="property-info"><h3 class="property-title">Sinop Merkez'de Deniz Manzaralı Daire</h3><p class="property-location">📍 Sinop, Gerze</p><div class="property-price">₺3.300.000</div><div class="property-features"><span class="feature-item">🛏️ 2+1</span><span class="feature-item">📏 70 m²</span><span class="feature-item">🌊 Manzara</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="sinop">
+                    <div class="property-image"><span class="badge" >Bahçeli</span><a href="sinop1.html"><img src="sinop/sinop1_1.png" alt="Sinop Ev"></a></div>
+                    <div class="property-info"><h3 class="property-title">Ayancık'ta Bahçeli Müstakil Ev</h3><p class="property-location">📍 Sinop, Merkez</p><div class="property-price">₺4.950.000</div><div class="property-features"><span class="feature-item">🛏️ 3+1</span><span class="feature-item">📏 105 m²</span><span class="feature-item">🏢 Merkez</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="kiralik" data-sehir="nevsehir">
+                    <div class="property-image"><span class="badge" style="background-color: #2ecc71;">Kiralık</span><a href="nevsehir.html"><img src="nevsehir\nevsehir1.png" alt="Ürgüp"></a></div>
+                    <div class="property-info"><h3 class="property-title">Eymer Rezidans Spor Salonlu 1+1 Eşyalı</h3><p class="property-location">📍 Nevşehir, Merkez</p><div class="property-price">₺19.000</div><div class="property-features"><span class="feature-item">🛏️ 1+1</span><span class="feature-item">📏 60 m²</span><span class="feature-item">🏢 Merkez</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="gunluk" data-sehir="rize">
+                    <div class="property-image"><span class="badge" style="background-color: #2ecc71;">Günlük</span><a href="rize.html"><img src="rize/rize1.png" alt="Rize"></a></div>
+                    <div class="property-info"><h3 class="property-title">Ayder Yaylası Ahşap Bungalov</h3><p class="property-location">📍 Rize, Ayder Yaylası</p><div class="property-price">₺4.500 / Günlük</div><div class="property-features"><span class="feature-item">🛏️ 1+1</span><span class="feature-item">📏 50 m²</span><span class="feature-item">🌲 Orman</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="gaziantep">
+                    <div class="property-image"><span class="badge">Tarihi</span><img src="https://www.yesilodak.com/images/upload/2023/5084/Yesil_odak_stone_house_avlulu_tas_ev_1a.jpg" alt="Antep Evi"></div>
+                    <div class="property-info"><h3 class="property-title">Bey Mahallesi'nde Avlulu Taş Ev</h3><p class="property-location">📍 Gaziantep, Şahinbey</p><div class="property-price">₺6.750.000</div><div class="property-features"><span class="feature-item">🛏️ 4+1</span><span class="feature-item">📏 220 m²</span><span class="feature-item">🏺 Avlulu</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="canakkale">
+                    <div class="property-image"><span class="badge">Manzara</span><img src="https://www.bizevdeyokuz.com/wp-content/uploads/kayalar-stone-house-assos.jpg" alt="Assos"></div>
+                    <div class="property-info"><h3 class="property-title">Assos'ta Deniz Manzaralı Taş Ev</h3><p class="property-location">📍 Çanakkale, Ayvacık</p><div class="property-price">₺7.200.000</div><div class="property-features"><span class="feature-item">🛏️ 3+1</span><span class="feature-item">📏 130 m²</span><span class="feature-item">🌊 Ege</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="aydin">
+                    <div class="property-image"><span class="badge">Yazlık</span><img src="https://assets.tatildekirala.com///aydin-kusadasinda-huzurlu-dogada-ozel-havuzlu-konforlu-villa-1121810.jpeg" alt="Kuşadası"></div>
+                    <div class="property-info"><h3 class="property-title">Kuşadası'nda Havuzlu Yazlık Villa</h3><p class="property-location">📍 Aydın, Kuşadası</p><div class="property-price">₺8.900.000</div><div class="property-features"><span class="feature-item">🛏️ 4+1</span><span class="feature-item">📏 180 m²</span><span class="feature-item">🏊 Havuz</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="kars">
+                    <div class="property-image"><span class="badge">Merkezi</span><img src="https://www.bizevdeyokuz.com/wp-content/uploads/sait-pasa-ilkokulu-kars.jpg" alt="Kars Mimari"></div>
+                    <div class="property-info"><h3 class="property-title">Kars Merkez'de Taş Bina Daire</h3><p class="property-location">📍 Kars, Merkez</p><div class="property-price">₺2.450.000</div><div class="property-features"><span class="feature-item">🛏️ 2+1</span><span class="feature-item">📏 115 m²</span><span class="feature-item">🔥 Isınma</span></div></div>
+                </div>
+                 <div class="property-card" data-kategori="satilik" data-sehir="kars">
+                    <div class="property-image"><span class="badge">Yatırımlık</span><img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=800&q=80" alt="Kars Ev"></div>
+                    <div class="property-info"><h3 class="property-title">Sarıkamış'ta Kayak Merkezine Yakın</h3><p class="property-location">📍 Kars, Sarıkamış</p><div class="property-price">₺2.800.000</div><div class="property-features"><span class="feature-item">🛏️ 1+1</span><span class="feature-item">📏 65 m²</span><span class="feature-item">🎿 Kayak</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="adana">
+                    <div class="property-image"><span class="badge">Geniş</span><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Adana"></div>
+                    <div class="property-info"><h3 class="property-title">Seyhan'da Göl Manzaralı Daire</h3><p class="property-location">📍 Adana, Seyhan</p><div class="property-price">₺3.750.000</div><div class="property-features"><span class="feature-item">🛏️ 4+1</span><span class="feature-item">📏 200 m²</span><span class="feature-item">❄️ Klimalı</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="konya">
+                    <div class="property-image"><span class="badge">Aile</span><img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=800&q=80" alt="Konya"></div>
+                    <div class="property-info"><h3 class="property-title">Meram'da Bahçeli Site İçi Daire</h3><p class="property-location">📍 Konya, Meram</p><div class="property-price">₺4.100.000</div><div class="property-features"><span class="feature-item">🛏️ 3+1</span><span class="feature-item">📏 165 m²</span><span class="feature-item">🌳 Yeşil</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="mugla">
+                    <div class="property-image"><span class="badge">Satılık</span><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80" alt="Villa"></div>
+                    <div class="property-info"><h3 class="property-title">Bodrum Yalıkavak'ta Lüks Villa</h3><p class="property-location">📍 Muğla, Bodrum</p><div class="property-price">₺12.500.000</div><div class="property-features"><span class="feature-item">🛏️ 4+1</span><span class="feature-item">📏 250 m²</span><span class="feature-item">🚿 3</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="kiralik" data-sehir="istanbul">
+                    <div class="property-image"><span class="badge" style="background-color: #2ecc71;">Kiralık</span><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Daire"></div>
+                    <div class="property-info"><h3 class="property-title">Kadıköy Sahile Yakın 2+1 Daire</h3><p class="property-location">📍 İstanbul, Kadıköy</p><div class="property-price">₺35.000 / Aylık</div><div class="property-features"><span class="feature-item">🛏️ 2+1</span><span class="feature-item">📏 90 m²</span><span class="feature-item">🚿 1</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="kiralik" data-sehir="istanbul">
+                    <div class="property-image"><span class="badge" style="background-color: #2ecc71;">Kiralık</span><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" alt="Rezidans"></div>
+                    <div class="property-info"><h3 class="property-title">Maslak Plaza'da Lüks Ofis Katı</h3><p class="property-location">📍 İstanbul, Sarıyer</p><div class="property-price">₺65.000 / Aylık</div><div class="property-features"><span class="feature-item">🛏️ 2+1</span><span class="feature-item">📏 110 m²</span><span class="feature-item">🚗 Otopark</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="istanbul">
+                    <div class="property-image"><span class="badge">Fırsat</span><img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80" alt="Loft"></div>
+                    <div class="property-info"><h3 class="property-title">Galata Kulesi Manzaralı Loft Daire</h3><p class="property-location">📍 İstanbul, Beyoğlu</p><div class="property-price">₺11.000.000</div><div class="property-features"><span class="feature-item">🛏️ 1+1</span><span class="feature-item">📏 85 m²</span><span class="feature-item">🎨 Tarihi</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="istanbul">
+                    <div class="property-image"><span class="badge">Özel</span><img src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&w=800&q=80" alt="Boğaz Manzarası"></div>
+                    <div class="property-info"><h3 class="property-title">Boğaz Manzaralı Penthouse Daire</h3><p class="property-location">📍 İstanbul, Beşiktaş</p><div class="property-price">₺45.000.000</div><div class="property-features"><span class="feature-item">🛏️ 3+1</span><span class="feature-item">📏 180 m²</span><span class="feature-item">🌉 Teraslı</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="ankara">
+                    <div class="property-image"><span class="badge">Satılık</span><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Modern Ev"></div>
+                    <div class="property-info"><h3 class="property-title">Çankaya'da Modern Site İçi Daire</h3><p class="property-location">📍 Ankara, Çankaya</p><div class="property-price">₺8.750.000</div><div class="property-features"><span class="feature-item">🛏️ 3+1</span><span class="feature-item">📏 165 m²</span><span class="feature-item">🚿 2</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="ankara">
+                    <div class="property-image"><span class="badge">Fırsat</span><img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" alt="Daire"></div>
+                    <div class="property-info"><h3 class="property-title">Keçiören'de Merkezi Konum Daire</h3><p class="property-location">📍 Ankara, Keçiören</p><div class="property-price">₺3.250.000</div><div class="property-features"><span class="feature-item">🛏️ 2+1</span><span class="feature-item">📏 110 m²</span><span class="feature-item">🚇 Metro</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="kiralik" data-sehir="ankara">
+                    <div class="property-image"><span class="badge" style="background-color: #2ecc71;">Kiralık</span><img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=800&q=80" alt="Ofis"></div>
+                    <div class="property-info"><h3 class="property-title">Tunalı Hilmi'de Ofis Katı</h3><p class="property-location">📍 Ankara, Çankaya</p><div class="property-price">₺25.000 / Aylık</div><div class="property-features"><span class="feature-item">🛏️ 3+1</span><span class="feature-item">📏 140 m²</span><span class="feature-item">🏢 İşlek</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="izmir">
+                    <div class="property-image"><span class="badge">Satılık</span><a href="izmir.html"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80" alt="İzmir"></a></div>
+                    <div class="property-info"><h3 class="property-title">Alsancak Kordon'da Manzaralı Daire</h3><p class="property-location">📍 İzmir, Konak</p><div class="property-price">₺18.500.000</div><div class="property-features"><span class="feature-item">🛏️ 4+1</span><span class="feature-item">📏 220 m²</span><span class="feature-item">🚿 2</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="izmir">
+                    <div class="property-image"><span class="badge">Satılık</span><img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&w=800&q=80" alt="Taş Ev"></div>
+                    <div class="property-info"><h3 class="property-title">Alaçatı'da Restore Taş Ev</h3><p class="property-location">📍 İzmir, Çeşme</p><div class="property-price">₺16.500.000</div><div class="property-features"><span class="feature-item">🛏️ 3+1</span><span class="feature-item">📏 140 m²</span><span class="feature-item">🏊 Havuz</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="izmir">
+                    <div class="property-image"><span class="badge">Doğa</span><img src="https://images.unsplash.com/photo-1500076656116-558758c991c1?auto=format&fit=crop&w=800&q=80" alt="Bağ Evi"></div>
+                    <div class="property-info"><h3 class="property-title">Urla Bağ Yolu'nda Çiftlik Evi</h3><p class="property-location">📍 İzmir, Urla</p><div class="property-price">₺22.000.000</div><div class="property-features"><span class="feature-item">🛏️ 5+2</span><span class="feature-item">📏 600 m²</span><span class="feature-item">🍇 Bağlı</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="antalya">
+                    <div class="property-image"><span class="badge">Lüks</span><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Villa"></div>
+                    <div class="property-info"><h3 class="property-title">Kaş'ta Sonsuzluk Havuzlu Villa</h3><p class="property-location">📍 Antalya, Kaş</p><div class="property-price">₺24.000.000</div><div class="property-features"><span class="feature-item">🛏️ 5+2</span><span class="feature-item">📏 450 m²</span><span class="feature-item">🚿 4</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="antalya">
+                    <div class="property-image"><span class="badge">Satılık</span><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80" alt="Antalya Ev"></div>
+                    <div class="property-info"><h3 class="property-title">Konyaaltı'nda Denize Yakın Apart</h3><p class="property-location">📍 Antalya, Konyaaltı</p><div class="property-price">₺5.500.000</div><div class="property-features"><span class="feature-item">🛏️ 2+1</span><span class="feature-item">📏 110 m²</span><span class="feature-item">🏖️ Sahil</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="gunluk" data-sehir="antalya">
+                    <div class="property-image"><span class="badge" style="background-color: #2ecc71;">Günlük</span><img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80" alt="Bungalov"></div>
+                    <div class="property-info"><h3 class="property-title">Olimpos'ta Ağaç Ev</h3><p class="property-location">📍 Antalya, Olimpos</p><div class="property-price">₺4.000 / Günlük</div><div class="property-features"><span class="feature-item">🛏️ 1+0</span><span class="feature-item">📏 30 m²</span><span class="feature-item">🌲 Doğa</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="gunluk" data-sehir="sakarya">
+                    <div class="property-image"><span class="badge" style="background-color: #2ecc71;">Günlük</span><img src="https://images.unsplash.com/photo-1542718610-a1d656d1884c?auto=format&fit=crop&w=800&q=80" alt="Bungalov"></div>
+                    <div class="property-info"><h3 class="property-title">Sapanca Göl Kenarı Bungalov</h3><p class="property-location">📍 Sakarya, Sapanca</p><div class="property-price">₺7.500 / Günlük</div><div class="property-features"><span class="feature-item">🛏️ 1+1</span><span class="feature-item">📏 60 m²</span><span class="feature-item">🔥 Şömine</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="sakarya">
+                    <div class="property-image"><span class="badge">Satılık</span><img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&w=800&q=80" alt="Ev"></div>
+                    <div class="property-info"><h3 class="property-title">Serdivan'da Geniş Daire</h3><p class="property-location">📍 Sakarya, Serdivan</p><div class="property-price">₺3.850.000</div><div class="property-features"><span class="feature-item">🛏️ 3+1</span><span class="feature-item">📏 140 m²</span><span class="feature-item">🏫 Kampüs</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="sakarya">
+                    <div class="property-image"><span class="badge">Bahçeli</span><img src="https://images.unsplash.com/photo-1598228723793-52759bba239c?auto=format&fit=crop&w=800&q=80" alt="Ev"></div>
+                    <div class="property-info"><h3 class="property-title">Karasu'da Yazlık Villa</h3><p class="property-location">📍 Sakarya, Karasu</p><div class="property-price">₺4.200.000</div><div class="property-features"><span class="feature-item">🛏️ 4+1</span><span class="feature-item">📏 200 m²</span><span class="feature-item">🏖️ Plaj</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="bursa">
+                    <div class="property-image"><span class="badge">Satılık</span><img src="https://static.tekce.com/files/emlaklar/dis/61/yei-00205-detached-house-for-sale-in-bursa-at-the-foothills-of-uludag-te.jpeg" alt="Dağ Evi"></div>
+                    <div class="property-info"><h3 class="property-title">Uludağ Eteklerinde Müstakil Ev</h3><p class="property-location">📍 Bursa, Osmangazi</p><div class="property-price">₺2.250.000</div><div class="property-features"><span class="feature-item">🛏️ 3+1</span><span class="feature-item">📏 180 m²</span><span class="feature-item">🌲 Bahçeli</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="bursa">
+                    <div class="property-image"><span class="badge">Fırsat</span><img src="https://images.unsplash.com/photo-1592595896551-12b371d546d5?auto=format&fit=crop&w=800&q=80" alt="Modern"></div>
+                    <div class="property-info"><h3 class="property-title">Nilüfer'de Lüks Site İçi Daire</h3><p class="property-location">📍 Bursa, Nilüfer</p><div class="property-price">₺5.750.000</div><div class="property-features"><span class="feature-item">🛏️ 4+1</span><span class="feature-item">📏 190 m²</span><span class="feature-item">🏊 Havuz</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="bursa">
+                    <div class="property-image"><span class="badge">Manzara</span><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80" alt="Mudanya"></div>
+                    <div class="property-info"><h3 class="property-title">Mudanya'da Deniz Manzaralı Yazlık</h3><p class="property-location">📍 Bursa, Mudanya</p><div class="property-price">₺4.800.000</div><div class="property-features"><span class="feature-item">🛏️ 3+1</span><span class="feature-item">📏 145 m²</span><span class="feature-item">🌊 Deniz</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="trabzon">
+                    <div class="property-image"><span class="badge">Satılık</span><img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=800&q=80" alt="Yayla Evi"></div>
+                    <div class="property-info"><h3 class="property-title">Karadeniz Yaylasında Huzur Evi</h3><p class="property-location">📍 Trabzon, Çaykara</p><div class="property-price">₺4.500.000</div><div class="property-features"><span class="feature-item">🛏️ 4+1</span><span class="feature-item">📏 200 m²</span><span class="feature-item">🌫️ Manzara</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="gunluk" data-sehir="trabzon">
+                    <div class="property-image"><span class="badge" style="background-color: #2ecc71;">Günlük</span><img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?auto=format&fit=crop&w=800&q=80" alt="Ahşap Ev"></div>
+                    <div class="property-info"><h3 class="property-title">Uzungöl Manzaralı Ahşap Ev</h3><p class="property-location">📍 Trabzon, Uzungöl</p><div class="property-price">₺6.000 / Günlük</div><div class="property-features"><span class="feature-item">🛏️ 2+1</span><span class="feature-item">📏 80 m²</span><span class="feature-item">🏞️ Göl</span></div></div>
+                </div>
+                 <div class="property-card" data-kategori="satilik" data-sehir="trabzon">
+                    <div class="property-image"><span class="badge">Merkezi</span><img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=800&q=80" alt="Daire"></div>
+                    <div class="property-info"><h3 class="property-title">Ortahisar'da Lüks Şehir Dairesi</h3><p class="property-location">📍 Trabzon, Merkez</p><div class="property-price">₺3.500.000</div><div class="property-features"><span class="feature-item">🛏️ 3+1</span><span class="feature-item">📏 160 m²</span><span class="feature-item">🏙️ Şehir</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="kiralik" data-sehir="eskisehir">
+                    <div class="property-image"><span class="badge" style="background-color: #2ecc71;">Kiralık</span><img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" alt="Stüdyo"></div>
+                    <div class="property-info"><h3 class="property-title">Üniversiteye Yakın Stüdyo Daire</h3><p class="property-location">📍 Eskişehir, Tepebaşı</p><div class="property-price">₺4.000 / Aylık</div><div class="property-features"><span class="feature-item">🛏️ 1+0</span><span class="feature-item">📏 45 m²</span><span class="feature-item">🎓 Eşyalı</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="eskisehir">
+                    <div class="property-image"><span class="badge">Tarihi</span><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="Odunpazarı"></div>
+                    <div class="property-info"><h3 class="property-title">Odunpazarı Tarihi Konak</h3><p class="property-location">📍 Eskişehir, Odunpazarı</p><div class="property-price">₺8.500.000</div><div class="property-features"><span class="feature-item">🛏️ 5+2</span><span class="feature-item">📏 280 m²</span><span class="feature-item">🏛️ Tarihi</span></div></div>
+                </div>
+                 <div class="property-card" data-kategori="satilik" data-sehir="eskisehir">
+                    <div class="property-image"><span class="badge">Satılık</span><img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80" alt="Ev"></div>
+                    <div class="property-info"><h3 class="property-title">Batıkent'te Modern Daire</h3><p class="property-location">📍 Eskişehir, Batıkent</p><div class="property-price">₺4.250.000</div><div class="property-features"><span class="feature-item">🛏️ 3+1</span><span class="feature-item">📏 155 m²</span><span class="feature-item">✨ Yeni</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="mersin">
+                    <div class="property-image"><span class="badge">Yazlık</span><img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=800&q=80" alt="Yazlık"></div>
+                    <div class="property-info"><h3 class="property-title">Denize Sıfır Site İçi Yazlık</h3><p class="property-location">📍 Mersin, Erdemli</p><div class="property-price">₺3.250.000</div><div class="property-features"><span class="feature-item">🛏️ 2+1</span><span class="feature-item">📏 100 m²</span><span class="feature-item">🏖️ Plajlı</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="mersin">
+                    <div class="property-image"><span class="badge">Lüks</span><img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&w=800&q=80" alt="Rezidans"></div>
+                    <div class="property-info"><h3 class="property-title">Mezitli'de Deniz Manzaralı Site</h3><p class="property-location">📍 Mersin, Mezitli</p><div class="property-price">₺4.900.000</div><div class="property-features"><span class="feature-item">🛏️ 4+1</span><span class="feature-item">📏 210 m²</span><span class="feature-item">🌊 Deniz</span></div></div>
+                </div>
+                <div class="property-card" data-kategori="satilik" data-sehir="bolu">
+                    <div class="property-image"><span class="badge">Dağ Evi</span><img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Kütük Ev"></div>
+                    <div class="property-info"><h3 class="property-title">Abant Gölü Yakını Kütük Ev</h3><p class="property-location">📍 Bolu, Merkez</p><div class="property-price">₺9.000.000</div><div class="property-features"><span class="feature-item">🛏️ 3+1</span><span class="feature-item">📏 160 m²</span><span class="feature-item">🔥 Şömine</span></div></div>
+                </div>
+                 <div class="property-card" data-kategori="satilik" data-sehir="bolu">
+                    <div class="property-image"><span class="badge">Merkezi</span><img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=800&q=80" alt="Ev"></div>
+                    <div class="property-info"><h3 class="property-title">Bolu Merkez Geniş Daire</h3><p class="property-location">📍 Bolu, Merkez</p><div class="property-price">₺2.850.000</div><div class="property-features"><span class="feature-item">🛏️ 3+1</span><span class="feature-item">📏 135 m²</span><span class="feature-item">🏫 Okul</span></div></div>
+                </div>
+				<div class="property-card" data-kategori="kiralik" data-sehir="izmir">
+                    <div class="property-image"><span class="badge" style="background-color: #2ecc71;">Merkezi</span><img src="https://alacatiyapi.com/tema/genel/uploads/emlaklar/IMG-20230411-WA0326_1.jpg" alt="Ev"></div>
+                    <div class="property-info"><h3 class="property-title">Buca'da 3+1 kiralık daire</h3><p class="property-location">📍 İzmir, Buca</p><div class="property-price">₺28.500 / Aylık</div><div class="property-features"><span class="feature-item">🛏️ 3+1</span><span class="feature-item">📏 145 m²</span><span class="feature-item">Eşyalı</span></div></div>
+                </div>
+				<div class="property-card" data-kategori="kiralik" data-sehir="istanbul">
+    				<div class="property-image"><span class="badge" style="background-color: #2ecc71;">Yeni</span><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" alt="İstanbul Ev"></div>
+					<div class="property-info"><h3 class="property-title">Beşiktaş Çarşı İçi Modern Daire</h3><p class="property-location">📍 İstanbul, Beşiktaş</p><div class="property-price">₺45.000 / Aylık</div><div class="property-features"><span class="feature-item">🛏️ 2+1</span><span class="feature-item">📏 95 m²</span><span class="feature-item">🏙️ Merkezi</span></div></div>
+				</div>
+				<div class="property-card" data-kategori="gunluk" data-sehir="rize">
+					<div class="property-image"><span class="badge" style="background-color: #2ecc71;">Günlük</span><img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80" alt="Rize Bungalov"></div>
+					<div class="property-info"><h3 class="property-title">Fırtına Deresi Kenarı Bungalov</h3><p class="property-location">📍 Rize, Çamlıhemşin</p><div class="property-price">₺4.500 / Günlük</div><div class="property-features"><span class="feature-item">🛏️ 1+1</span><span class="feature-item">📏 45 m²</span><span class="feature-item">🌲 Doğa</span></div></div>
+				</div>
+				<div class="property-card" data-kategori="satilik" data-sehir="antalya">
+					<div class="property-image"><span class="badge">Lüks</span><img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80" alt="Antalya Villa"></div>
+					<div class="property-info"><h3 class="property-title">Kalkan'da Sonsuzluk Havuzlu Villa</h3><p class="property-location">📍 Antalya, Kaş</p><div class="property-price">₺18.750.000</div><div class="property-features"><span class="feature-item">🛏️ 4+1</span><span class="feature-item">📏 280 m²</span><span class="feature-item">🏊 Havuz</span></div></div>
+				</div>
+				
+            </div>
+        </div>
+    </div>
+
+    <section class="features-section" id="hakkimizda">
+        <div class="container">
+            <h2 class="section-title">Neden Biz?</h2>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title" id="feature1-title">Geniş Portföy</h3>
+                    <p class="feature-description"><b>40+ aktif ilan ile geniş emlak portföyüne sahibiz.</b></p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title" id="feature2-title">Güvenli İşlem</h3>
+                    <p class="feature-description"><b>Tüm işlemleriniz yasal güvence altında, şeffaf ve güvenli şekilde gerçekleşir.</b></p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">👥</div>
+                    <h3 class="feature-title" id="feature3-title">Uzman Destek</h3>
+                    <p class="feature-description"><b>Profesyonel danışman ekibimiz 7/24 sizin için hizmet vermektedir.</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">40+</div>
+                    <div class="stat-label"><hr>Aktif İlan<hr></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">700+</div>
+                    <div class="stat-label"><hr>Mutlu Müşteri<hr></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label"><hr>Uzman Danışman<hr></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">20</div>
+                    <div class="stat-label"><hr>İl<hr></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="iletisim">
+        <div class="container">
+            <h2 class="section-title" style="color: white; margin-bottom: 40px;">İletişim</h2>
+            
+            <div class="footer-grid">
+                <div class="contact-info">
+                    <h3>Bize Ulaşın</h3>
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <p>Merkez Mahallesi, Emlak Caddesi No: 10, İzmir</p>
+                    </div>
+                    <div class="contact-item">
+                        <span>📞</span>
+                        <p>+90 555 123 45 67</p>
+                    </div>
+                    <div class="contact-item">
+                        <span></span>
+                        <p>iletisim@premiumemlak.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form onsubmit="event.preventDefault(); alert('Mesajınız iletildi! En kısa sürede dönüş yapacağız.');">
+                        <input type="text" placeholder="Adınız Soyadınız" required>
+                        <input type="email" placeholder="E-Posta Adresiniz" required>
+                        <input type="tel" placeholder="Telefon Numaranız">
+                        <textarea rows="4" placeholder="Mesajınız..." required></textarea>
+                        <button type="submit">Gönder</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-text" id="footer-text"><b>© 2025 Premium Emlak. Tüm hakları saklıdır.</b></p>
+            </div>
+        </div>
+    </footer>
+
+        <script>
+
+        const checkboxes = document.querySelectorAll('.sidebar input[type="checkbox"]');
+        const cards = document.querySelectorAll('.property-card');
+        const clearBtn = document.getElementById('clearFilters');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', filterProperties);
+        });
+
+        clearBtn.addEventListener('click', function() {
+            checkboxes.forEach(cb => cb.checked = false);
+            filterProperties();
+        });
+
+        function filterProperties() {
+            const selectedStatus = Array.from(document.querySelectorAll('input[name="durum"]:checked')).map(cb => cb.value);
+            const selectedCities = Array.from(document.querySelectorAll('input[name="sehir"]:checked')).map(cb => cb.value);
+
+            cards.forEach(card => {
+                const cardStatus = card.getAttribute('data-kategori');
+                const cardCity = card.getAttribute('data-sehir');
+
+                const statusMatch = selectedStatus.length === 0 || selectedStatus.includes(cardStatus);
+                const cityMatch = selectedCities.length === 0 || selectedCities.includes(cardCity);
+
+                if (statusMatch && cityMatch) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities,
+                mapToEditPanelValues
+            });
+        }
+    </script>
+</body>
+</html>
